@@ -85,7 +85,8 @@
 }
 .barra-sotto div {
   min-width: 180px;
-  width: 50px;
+  width: 20%;
+  padding: 0;
 }
 .barra-sotto div i {
   color: #a2adb3;
