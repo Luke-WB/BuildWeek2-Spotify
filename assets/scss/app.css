@@ -76,4 +76,26 @@
 }
 .friends i {
   color: #a2adb3;
+}
+
+.barra-sotto {
+  background-color: #181818;
+  -webkit-box-align: center;
+  -webkit-box-pack: justify;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  justify-content: space-between;
+  padding: 0 16px;
+}
+
+.barra-sotto div {
+  min-width: 180px;
+  width: 50px;
+}
+
+.barra-sotto div i {
+  color: #a2adb3;
+  font-size: 28px;
 }/*# sourceMappingURL=app.css.map */
