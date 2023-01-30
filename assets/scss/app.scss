@@ -4,17 +4,21 @@
   padding: 0;
   font-family: "Roboto", sans-serif;
 }
+.page-container {
+  display: flex;
+  justify-content: space-between;
+}
 .sidebar {
   background-color: black;
   padding-left: 20px;
   height: 100vh;
+  width: 300px;
 }
 .sidenav {
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 20px;
 
   ul {
     padding: 0;
@@ -40,33 +44,38 @@
 }
 .playlist-history {
   color: $grey-color;
-  .border {
-      width: 90%;
-      border-top: 1px $grey-color solid;
-      transform: scaleY(0.5);
-    }
-    .container{
-      overflow-y: scroll;
-      overflow-x: hidden;
-      height: 64vh;
-    
+  .playlist-border {
+    width: 90%;
+    border-top: 1px solid $grey-color;
+    transform: scaleY(0.3);
+  }
+  .container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 60vh;
+
     padding-top: 10px;
   }
 }
-.friends{
-    background-color: black;
-    .activity-div{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        h3{
-            margin-bottom: 0;
-            font-weight: bold;
-            font-size: 16px;
-            color: white;
-        }
+.friends {
+  background-color: black;
+  width: 200px;
+  .activity-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 16px;
+      color: white;
     }
-    i{
-        color: $grey-color;
-    }
+  }
+  i {
+    color: $grey-color;
+  }
+}
+.playlist-bar{
+    height: 77px;
+    background-color: $dark-grey;;
 }
