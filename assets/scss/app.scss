@@ -41,32 +41,53 @@
 .playlist-history {
   color: $grey-color;
   .border {
-      width: 90%;
-      border-top: 1px $grey-color solid;
-      transform: scaleY(0.5);
-    }
-    .container{
-      overflow-y: scroll;
-      overflow-x: hidden;
-      height: 64vh;
-    
+    width: 90%;
+    border-top: 1px $grey-color solid;
+    transform: scaleY(0.5);
+  }
+  .container {
+    overflow-y: scroll;
+    overflow-x: hidden;
+    height: 64vh;
+
     padding-top: 10px;
   }
 }
-.friends{
-    background-color: black;
-    .activity-div{
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        h3{
-            margin-bottom: 0;
-            font-weight: bold;
-            font-size: 16px;
-            color: white;
-        }
+.friends {
+  background-color: black;
+  .activity-div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h3 {
+      margin-bottom: 0;
+      font-weight: bold;
+      font-size: 16px;
+      color: white;
     }
-    i{
-        color: $grey-color;
+  }
+  i {
+    color: $grey-color;
+  }
+}
+
+.barra-sotto {
+  background-color: #181818;
+  -webkit-box-align: center;
+  -webkit-box-orient: horizontal;
+  -webkit-box-pack: justify;
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  height: 90px;
+  justify-content: space-between;
+  padding: 0 16px;
+  div {
+    min-width: 180px;
+    width: 50px;
+    i {
+      color: $grey-color;
+      font-size: 28px;
     }
+  }
 }
