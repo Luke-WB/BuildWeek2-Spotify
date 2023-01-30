@@ -1,20 +1,16 @@
-let songs
-const playList = function () {
-    fetch("https://striveschool-api.herokuapp.com/api/deezer/search?q=Giannivezzosi")
-    .then(function (response) {
-        if (response.ok) {
-            return response.json();
-        } else {
-            console.log(`c'e stato un errore nella chiamata`);
-        }
-    }).then(function(response){
-         songs = response.data
-        
-    })  
-    .catch(function (error) {
-        console.log(`c'e stato un errore : ${error}`);
-    });
-};
-playList()
-    
+let song = "nikopandetta"
+const playList = async function (song) {
+   let arrSongs = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${song}`)
+    let songs = await arrSongs.json()
+   return songs
+}
+const selectedSong = async function(){
+    let x = await playList(song)
+    let linkTrack = x.data[0].album.id
+    let linkFetch = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${linkTrack}`)
+    let album = await linkFetch.json()
+    console.log(album);
+}
+selectedSong()
+
 
