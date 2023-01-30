@@ -17,10 +17,25 @@ const fetchByQuery = async (idi) => {
 
 
   <img src="${copertina}" alt="${titoliCanzoni}" style="object-fit: cover; height:45vh;" class="w-100">
+  <p style="margin-top: 0;
+  margin-bottom: 1rem;
+  position: relative;
+    top: -26vh;
+    left: 6px; color:white;"> Artista verificato
+    <i class="fa-solid fa-certificate" style="color: #3d91f4"
+      ><span style="position: relative;
+      left: -15px;
+      top: -1px;
+      color: white;"><i class="fa-solid fa-check" style="font-weight: 900;
+      font-size: small;"></i></span
+    ></i>
+  </p>
+  
   <h1 style="font-weight: bold; color: white; position: relative; top: -195px;font-size: 6rem; margin: 0.08em 0px 0.12em;">${nomeArtista}</h1>
   <p style="position: relative;
-  top: -30vh;
+  top: -35vh;
   color: white; margin: 0.08em 0px 0.12em;">1.458.400 ascoltatori mensili</p>
+
   `
 }
 
