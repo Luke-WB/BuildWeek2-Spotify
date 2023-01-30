@@ -87,16 +87,25 @@
   flex-direction: row;
   height: 77px;
   justify-content: space-between;
+  padding: 0 16px;
   padding: 0;
 }
-
 .barra-sotto div {
   min-width: 180px;
   width: 20%;
   padding: 0;
 }
+.barra-sotto div i {
+  color: #a2adb3;
+  font-size: 24px;
+}
+
+.barra-sotto div {
+  min-width: 180px;
+  width: 20%;
+}
 
 .barra-sotto div i {
   color: #a2adb3;
   font-size: 24px;
-} /*# sourceMappingURL=app.css.map */
+}/*# sourceMappingURL=app.css.map */
