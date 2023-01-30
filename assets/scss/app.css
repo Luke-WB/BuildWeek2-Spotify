@@ -4,18 +4,23 @@
   font-family: "Roboto", sans-serif;
 }
 
+.page-container {
+  display: flex;
+  justify-content: space-between;
+}
+
 .sidebar {
   background-color: black;
   padding-left: 20px;
   height: 100vh;
+  width: 300px;
 }
 
 .sidenav {
-  height: 200px;
+  height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  padding-bottom: 20px;
 }
 .sidenav ul {
   padding: 0;
@@ -42,20 +47,21 @@
 .playlist-history {
   color: #a2adb3;
 }
-.playlist-history .border {
+.playlist-history .playlist-border {
   width: 90%;
-  border-top: 1px #a2adb3 solid;
-  transform: scaleY(0.5);
+  border-top: 1px solid #a2adb3;
+  transform: scaleY(0.3);
 }
 .playlist-history .container {
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 64vh;
+  height: 60vh;
   padding-top: 10px;
 }
 
 .friends {
   background-color: black;
+  width: 200px;
 }
 .friends .activity-div {
   display: flex;
@@ -79,16 +85,18 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  height: 90px;
+  height: 77px;
   justify-content: space-between;
-  padding: 0 16px;
+  padding: 0;
 }
+
 .barra-sotto div {
   min-width: 180px;
   width: 20%;
   padding: 0;
 }
+
 .barra-sotto div i {
   color: #a2adb3;
   font-size: 24px;
-}/*# sourceMappingURL=app.css.map */
+} /*# sourceMappingURL=app.css.map */
