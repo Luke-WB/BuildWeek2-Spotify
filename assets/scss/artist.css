@@ -108,4 +108,8 @@
 .barra-sotto div i {
   color: #a2adb3;
   font-size: 24px;
+}
+
+#immagine {
+  position: static;
 }/*# sourceMappingURL=artist.css.map */
