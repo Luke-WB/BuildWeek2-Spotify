@@ -2,59 +2,73 @@ const APIUrl = "https://striveschool-api.herokuapp.com/api/deezer/artist/"
 
 const fetchByQuery = async (idi) => {
   const res = await fetch(`${APIUrl}${idi}`)
-  const { id, tracklist } = await res.json()
-  // console.log(tracklist)
+  // console.log(res)
+  const { tracklist, picture_xl, nb_fan } = await res.json()
   const tracce = await fetch(tracklist)
   const { data } = await tracce.json()
-  // console.log(data)
-  const copertina = data[3].album.cover_xl
+  // console.log(tracklist)
   const nomeArtista = data[3].artist.name
 
-  // console.log(
+  // console.log()
 
   let divImg = document.querySelector("#immagine")
   divImg.innerHTML += `
   
   
-  <img src="${copertina}" alt="pic-album" style="object-fit: cover; height:48vh;" class="w-100">
+  <img src="${picture_xl}" alt="pic-album" style="object-fit: cover; height:48vh; object-position: center;" class="w-100">
   <p style="margin-top: 0;
   margin-bottom: 1rem;
   position: relative;
   top: -26vh;
   left: 6px; color:white; font-weight: bold;"> Artista verificato
-  <i class="fa-solid fa-certificate" style="color: #3d91f4"
+  <i class="fa-solid fa-certificate" style="color: #3d91f4; font-size: larger;"
   ><span style="position: relative;
-  left: -15px;
-  top: -1px;
+  left: -19px;
   color: white;"><i class="fa-solid fa-check" style="font-weight: 900;
-  font-size: small;"></i></span
+  transform: scale(0.7);"></i></span
   ></i>
   </p> 
   
   <h1 style="font-weight: bold; color: white; position: relative; top: -195px;font-size: 6rem; margin: 0.08em 3px 0.12em;">${nomeArtista}</h1>
   <p style="position: relative;
   top: -30vh;
-  color: white; margin: 0.08em 3px 0.12em;">1.458.400 ascoltatori mensili</p>
+  color: white; margin: 0.08em 3px 0.12em;">${nb_fan} ascoltatori mensili</p>
   
   `
+  const imgArtista = document.querySelector("#artista-img")
+  imgArtista.innerHTML += ` <img
+  src="${picture_xl}"
+  class="rounded-circle position-static"
+  style="width: 12vh"
+  alt="artist-pic"
+  />
+  <div id="imagginina" class="position-relative">
+  <i class="fa-solid fa-heart" id="cuoricino"></i>
+  </div>
+  <p class="par m-0">Hai messo Mi piace a 11 brani <br><span style="color:#a2adb3;" class="par m-0">Di ${nomeArtista}</span>
+  </p>
+  `
+
   return data
 }
 
 const renderFavoriteSongs = async () => {
-  let canzoni = await fetchByQuery("13")
-  console.log(canzoni)
+  let canzoni = await fetchByQuery("17")
+  // console.log(canzoni)
   for (let i = 0; i < canzoni.length; i++) {
     const canzonePrincipale = canzoni[i]
     const div = document.querySelector("#carta")
-    console.log(div)
+    // console.log(div)
     div.innerHTML += `
     <div class="row m-3">
     <div class="col-1 text-light text-center">${i + 1}</div>
     <div class="col-2 "><img src="${
       canzonePrincipale.album.cover_xl
     }" alt="" style="width: 60px;"></div>
-    <div class="col-4 text-light">${canzonePrincipale.title}</div>
-    <div class="col-3 text-light">${canzonePrincipale.rank}</div>
+    <div class="col-5 text-light text-start">${
+      canzonePrincipale.title_short
+    }</div>
+    <div class="col-2 text-light">${canzonePrincipale.rank}</div>
     <div class="col-2 text-light">${(canzonePrincipale.duration / 60).toFixed(
       2
     )}</div>

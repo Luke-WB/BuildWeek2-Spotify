@@ -157,3 +157,51 @@
   font-size: 30px;
   color: white;
 }
+
+#cartone {
+  width: 70%;
+  h3 {
+    color: white;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+}
+
+#imagginina {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  left: -30px;
+  background-color: #1fdf64;
+  top: 69px;
+  #cuoricino {
+    color: white;
+    position: relative;
+    left: 3px;
+    top: 1px;
+  }
+}
+
+.par {
+  color: white;
+}
+
+main {
+  background: rgb(0, 0, 0);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9301181654302346) 32%,
+    rgba(65, 56, 34, 0.8544879133293942) 65%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9301181654302346) 32%,
+    rgba(65, 56, 34, 0.8544879133293942) 65%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9301181654302346) 32%,
+    rgba(65, 56, 34, 0.8544879133293942) 65%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#413822",GradientType=1);
+}
