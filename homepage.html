@@ -8,12 +8,13 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/scss/app.css" />
+    <link rel="stylesheet" href="./assets/scss/homepage.css">
     <script
       src="https://kit.fontawesome.com/185747f510.js"
       crossorigin="anonymous"
       defer
     ></script>
-    <script src="./assets/js/script.js" defer></script>
+    <script src="./assets/js/homepage.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -51,9 +52,26 @@
           </div>
         </div>
       </div>
-      <main class="w-100">
-        <div id="music">
-          
+      <main class="home-main w-100">
+        <!--Div Single Album-->
+        <div class="announced-album row"id="single-album">
+            
+        </div>
+        <!--Div Title-->
+        <div class="albums-title">
+          <p>Buonasera</p>
+        </div>
+        <!--Div with 6 cards with songs-->
+        <div class="container">
+          <div class="row  row-cols-3 row-cols-lg-2 justify-content-center albums-row" id="liked-songs">
+            
+          </div>
+        </div>
+        <!--Div album cards-->
+        <div class="container">
+          <div class="row  row-cols-sm-2 row-cols-md-4 row-cols-lg-6 justify-content-center albums-row2 mt-4" id="album-cards">
+            
+          </div>
         </div>
       </main>
       <div class="friends">

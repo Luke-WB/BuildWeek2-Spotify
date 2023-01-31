@@ -54,6 +54,7 @@
   .container {
     overflow-y: scroll;
     overflow-x: hidden;
+    
   }
 }
 .friends {
@@ -96,8 +97,17 @@
   font-size: 24px;
 }
 main {
+  color: white;
   #music {
     padding-top: 15px;
+  }
+  .container{
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    @media (min-width: 1400px){
+    max-width: 100%;
+}
   }
 }
 .profile {
@@ -114,5 +124,12 @@ main {
     font-size: 10px;
     color: $grey-color;
     margin-bottom: 2px;
+  }
+}
+.albums-row2{
+  gap: 20px;
+  .album-cards{
+    background-color: #171717;
+    padding: 10px 10px 0px 10px;
   }
 }

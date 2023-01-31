@@ -1,8 +1,76 @@
-home-main {
+.home-main {
   background: rgb(34, 34, 34);
   background: linear-gradient(
     180deg,
     rgba(34, 34, 34, 1) 50%,
     rgba(18, 18, 18, 1) 100%
   );
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 0px 10px;
+  padding-bottom: 110px;
+  .announced-album {
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    width: 100%;
+    height: 200px;
+    margin-top: 40px;
+    padding: 10px;
+    background: linear-gradient(
+      5deg,
+      rgba(0, 0, 0, 1) 1%,
+      rgba(31, 31, 31, 1) 66%
+    );
+    #announced-img {
+      display: flex;
+      justify-content: center;
+      img{
+        height: 150px;
+      }
+    }
+    #announced-text {
+      color: white;
+      p {
+        font-size: 12px;
+        margin: 0;
+      }
+      h2 {
+        font-size: 56px;
+        font-weight: bolder;
+      }
+    }
+  }
+}
+.albums-title {
+  width: 100%;
+  p {
+    font-size: 24px;
+    margin: 10px 0px;
+    font-weight: bolder;
+  }
+}
+.albums-row {
+  gap: 10px;
+  .your-albums {
+    display: flex;
+    align-items: center;
+    width: 32%;
+    background-color: #2d2d2d;
+    border-radius: 4px;
+    .albums-img {
+      img{
+        width: 80px;
+        border-top-left-radius:4px ;
+        border-bottom-left-radius:4px ;
+      }
+    }
+    .albums-text {
+      p {
+        margin: 0;
+        padding-left: 5px;
+      }
+    }
+  }
 }
