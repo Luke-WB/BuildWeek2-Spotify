@@ -10,15 +10,17 @@
 }
 .sidebar {
   background-color: black;
-  padding-left: 20px;
+
   height: 100vh;
-  width: 300px;
+  min-width: 250px;
 }
 .sidenav {
   height: 250px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  padding-left: 15px;
+  padding-top: 30px;
 
   ul {
     padding: 0;
@@ -52,15 +54,12 @@
   .container {
     overflow-y: scroll;
     overflow-x: hidden;
-    height: 60vh;
-
-    padding-top: 10px;
   }
 }
 .friends {
   background-color: black;
-  width: 200px;
-  padding: 40px 5px 0px 10px;
+  padding: 30px 5px 0px 15px;
+  min-width: 200px;
   .activity-div {
     display: flex;
     align-items: center;
@@ -96,7 +95,11 @@
   color: #a2adb3;
   font-size: 24px;
 }
-
+main {
+  #music {
+    padding-top: 15px;
+  }
+}
 .profile {
   display: flex;
   align-items: baseline;
