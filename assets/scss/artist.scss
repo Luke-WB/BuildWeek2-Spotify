@@ -205,3 +205,8 @@ main {
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#413822",GradientType=1);
 }
+
+.cambio:hover {
+  background-color: hsla(0, 0%, 100%, 0.1);
+  cursor: pointer;
+}
