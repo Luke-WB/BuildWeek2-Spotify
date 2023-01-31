@@ -112,4 +112,53 @@
 
 #immagine {
   position: static;
+  height: 48vh;
+}
+
+#music .contenuto {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.bottone-play {
+  height: 51px;
+  width: 52px;
+}
+
+#icona {
+  color: #1fdf64 !important;
+  font-size: 53px;
+}
+
+.seguire {
+  background-color: transparent;
+  border: 1px solid hsla(0deg, 0%, 100%, 0.3);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 16px;
+  padding: 7px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border-color: #fff;
+}
+
+.seguireDue {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+#iconaDue {
+  font-size: 30px;
+  color: white;
 }/*# sourceMappingURL=artist.css.map */

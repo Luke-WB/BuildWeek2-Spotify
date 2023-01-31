@@ -68,11 +68,26 @@
       </div>
 
       <!-- (CONTENUTO CENTRALE) -->
-      <main class="w-100">
+      <main class="w-100 mb-5 pb-5 bg-black">
         <!-- PARTE IMMAGINE -->
         <div id="immagine"></div>
         <!-- PARTE CANZONI -->
-        <div id="music"></div>
+        <div id="music" class="mt-2">
+          <!-- TRE BOTTONI -->
+          <div class="contenuto ms-4">
+            <div class="bottone-play rounded-circle bg-black">
+              <i class="fa-solid fa-circle-play" id="icona"></i>
+            </div>
+            <button type="button" class="seguire ms-4">FOLLOWING</button>
+            <button type="button" class="seguireDue ms-4" id="iconaDue">
+              <i class="fa-solid fa-ellipsis"></i>
+            </button>
+          </div>
+          <!-- CARD CANZONI -->
+          <p class="text-light fw-bold mt-3 ms-3">POPOLARI</p>
+
+          <div id="carta"></div>
+        </div>
       </main>
 
       <!-- (SIDEBAR DX) -->
