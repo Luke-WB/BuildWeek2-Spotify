@@ -20,10 +20,10 @@ function cycleArr(array) {
   console.log(array);
   let singleAlb = document.querySelector("#single-album");
   singleAlb.innerHTML = 
-    `<div class="col-3 p-0" id="announced-img">
+    `<div class="p-0" id="announced-img">
             <img src="${array[18].album.cover_medium}" alt="">
         </div>
-        <div class="col-9 p-0"id="announced-text">
+        <div class="ps-3"id="announced-text">
             <p>ALBUM</p>
             <h2>${array[18].album.title}</h2>
             <p>${array[18].artist.name}</p>
@@ -47,8 +47,8 @@ function cycleArr(array) {
     cardsAlbum.innerHTML += 
     `<div class="card album-cards">
             <img src="${array[i].album.cover_medium}" class="card-img-top" alt="...">
-        <div class="card-body">
-            <h5 class="card-title">${array[i].album.title}</h5>
+        <div class="card-body d-flex flex-column justify-content-between py-3 px-0">
+            <h5 class="card-title fs-6 ">${array[i].album.title}</h5>
             <p class="card-text">${array[i].artist.name}</p>
         </div>
     </div>`;
