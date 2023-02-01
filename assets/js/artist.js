@@ -31,7 +31,7 @@ const fetchByQuery = async (idi) => {
   
   <h1 style="font-weight: bold; color: white; position: relative; top: -195px;font-size: 6rem; margin: 0.08em 3px 0.12em;">${nomeArtista}</h1>
   <p style="position: absolute;
-  top: 300px;
+  top: 40%;
   color: white; margin: 0.08em 3px 0.12em;">${nb_fan} ascoltatori mensili</p>
   
   `
