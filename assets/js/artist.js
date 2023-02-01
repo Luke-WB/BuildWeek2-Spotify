@@ -30,8 +30,8 @@ const fetchByQuery = async (idi) => {
   </p> 
   
   <h1 style="font-weight: bold; color: white; position: relative; top: -195px;font-size: 6rem; margin: 0.08em 3px 0.12em;">${nomeArtista}</h1>
-  <p style="position: relative;
-  top: -30vh;
+  <p style="position: absolute;
+  top: 300px;
   color: white; margin: 0.08em 3px 0.12em;">${nb_fan} ascoltatori mensili</p>
   
   `
