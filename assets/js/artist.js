@@ -62,15 +62,15 @@ const renderFavoriteSongs = async (id) => {
     const div = document.querySelector("#carta")
     // console.log(div)
     div.innerHTML += `
-    <div class="row m-3 text-light cambio">
-    <div class="col-1 text-light text-center">${i + 1}</div>
-    <div class="col-2 "><img src="${
+    <div class="row m-3 text-light align-intems-center cambio">
+    <div class="col-1 text-light text-center ">${i + 1}</div>
+    <div class="col-2  "><img src="${
       canzonePrincipale.album.cover_xl
     }" alt="" style="width: 60px;"></div>
-    <div class="col-5  text-light text-start">${
+    <div class="col-5  text-light text-start ">${
       canzonePrincipale.title_short
     }</div>
-    <div class="col-2 text-light">${canzonePrincipale.rank}</div>
+    <div class="col-2  text-light">${canzonePrincipale.rank}</div>
     ${Math.floor(canzonePrincipale.duration / 60)}:${
       canzonePrincipale.duration -
       [Math.floor(canzonePrincipale.duration / 60) * 60]
