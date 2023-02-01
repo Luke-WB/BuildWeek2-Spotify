@@ -46,8 +46,7 @@
   color: $grey-color;
   .playlist-border {
     width: 90%;
-    border-top: 1px solid $grey-color;
-    transform: scaleY(0.3);
+    border-top: 1px solid white;
   }
   .container {
     overflow-y: scroll;

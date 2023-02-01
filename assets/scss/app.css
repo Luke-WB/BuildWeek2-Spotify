@@ -49,8 +49,7 @@
 }
 .playlist-history .playlist-border {
   width: 90%;
-  border-top: 1px solid #a2adb3;
-  transform: scaleY(0.3);
+  border-top: 1px solid white;
 }
 .playlist-history .container {
   overflow-y: scroll;
