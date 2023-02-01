@@ -61,7 +61,7 @@
 .friends {
   background-color: black;
   padding: 30px 5px 0px 15px;
-  min-width: 200px;
+  min-width: 220px;
 }
 .friends .activity-div {
   display: flex;
@@ -266,4 +266,26 @@ input[type=range]::-webkit-slider-runnable-track:hover {
   height: 12px;
   background: white;
   cursor: pointer;
+}
+
+#sfondoUno {
+  padding: 3px;
+  background: rgb(40, 62, 126);
+  background: linear-gradient(319deg, rgb(40, 62, 126) 75%, rgba(0, 0, 0, 0.8909024792) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#283e7e",endColorstr="#000000",GradientType=1);
+}
+
+#sfondoDue {
+  padding: 3px;
+  background: rgb(42, 126, 40);
+  background: linear-gradient(0deg, rgb(42, 126, 40) 79%, rgba(0, 0, 0, 0.8909024792) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a7e28",endColorstr="#000000",GradientType=1);
+}
+
+.mar {
+  margin-right: 10px;
+}
+
+.ore {
+  margin-right: 3px;
 }/*# sourceMappingURL=app.css.map */

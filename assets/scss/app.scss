@@ -58,7 +58,7 @@
 .friends {
   background-color: black;
   padding: 30px 5px 0px 15px;
-  min-width: 200px;
+  min-width: 220px;
   .activity-div {
     display: flex;
     align-items: center;
@@ -258,4 +258,53 @@ input[type="range"]::-webkit-slider-runnable-track:hover {
   height: 12px;
   background: white;
   cursor: pointer;
+}
+
+#sfondoUno {
+  padding: 3px;
+  background: rgb(40, 62, 126);
+  background: -moz-linear-gradient(
+    319deg,
+    rgba(40, 62, 126, 1) 75%,
+    rgba(0, 0, 0, 0.8909024791557247) 100%
+  );
+  background: -webkit-linear-gradient(
+    319deg,
+    rgba(40, 62, 126, 1) 75%,
+    rgba(0, 0, 0, 0.8909024791557247) 100%
+  );
+  background: linear-gradient(
+    319deg,
+    rgba(40, 62, 126, 1) 75%,
+    rgba(0, 0, 0, 0.8909024791557247) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#283e7e",endColorstr="#000000",GradientType=1);
+}
+#sfondoDue {
+  padding: 3px;
+  background: rgb(42, 126, 40);
+  background: -moz-linear-gradient(
+    0deg,
+    rgba(42, 126, 40, 1) 79%,
+    rgba(0, 0, 0, 0.8909024791557247) 100%
+  );
+  background: -webkit-linear-gradient(
+    0deg,
+    rgba(42, 126, 40, 1) 79%,
+    rgba(0, 0, 0, 0.8909024791557247) 100%
+  );
+  background: linear-gradient(
+    0deg,
+    rgba(42, 126, 40, 1) 79%,
+    rgba(0, 0, 0, 0.8909024791557247) 100%
+  );
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#2a7e28",endColorstr="#000000",GradientType=1);
+}
+
+.mar {
+  margin-right: 10px;
+}
+
+.ore {
+  margin-right: 3px;
 }
