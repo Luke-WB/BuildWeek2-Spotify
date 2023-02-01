@@ -83,5 +83,6 @@
 }
 
 .album-cards {
-  background-color: #2d2d2d;
+  background-color: #2d2d2d !important;
+  padding: 10px 10px 0 10px;
 }/*# sourceMappingURL=homepage.css.map */
