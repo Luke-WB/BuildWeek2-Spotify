@@ -1,4 +1,4 @@
-let artist = "salmo";
+let artist = "eminem";
 let artist2 = "dreamtheater";
 const playList = async function (song) {
   let arrSongs = await fetch(
