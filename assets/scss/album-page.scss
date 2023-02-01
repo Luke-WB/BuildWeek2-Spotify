@@ -1,3 +1,5 @@
+@import "colors";
+
 .music {
   font-family: "Roboto";
   .sopra {
@@ -33,7 +35,7 @@
     }
     .play {
       font-size: 50px;
-      color: #1dcf5b;
+      color: $spotify-green;
       background-color: black;
       border-radius: 250px;
     }
