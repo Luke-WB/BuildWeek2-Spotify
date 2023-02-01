@@ -200,7 +200,24 @@
     display: none;
   }
 }
-a{
+a {
   color: rgb(128, 128, 128) !important;
   text-decoration: none !important;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  opacity: 0%;
+  background-color: white;
+}
+input[type="range"]::-webkit-slider-runnable-track {
+  background-color: white;
+  height: 4px;
+}
+
+input[type="range"]::-webkit-slider-thumb:hover {
+  opacity: 100%;
+  background-color: white;
+}
+input[type="range"]::-webkit-slider-runnable-track:hover {
+  background-color: $spotify-green;
 }

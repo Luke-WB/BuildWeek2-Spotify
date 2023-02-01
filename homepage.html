@@ -6,9 +6,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./assets/scss/app.css" />
-    <link rel="stylesheet" href="./assets/scss/homepage.css">
+    <link rel="stylesheet" href="./assets/scss/homepage.css" />
     <script
       src="https://kit.fontawesome.com/185747f510.js"
       crossorigin="anonymous"
@@ -21,7 +24,10 @@
       integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css"
+    />
     <title>Document</title>
   </head>
   <body>
@@ -31,60 +37,68 @@
           <div class="nav">
             <ul>
               <div><i class="fa-solid fa-house"></i><a href="#">HOME</a></div>
-              <div><i class="fa-solid fa-magnifying-glass"></i><a href="">CERCA</a></div>
-              <div><i class="fa-solid fa-book"></i><a href="">La tua libreria</a></div>
+              <div>
+                <i class="fa-solid fa-magnifying-glass"></i><a href="">CERCA</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-book"></i><a href="">La tua libreria</a>
+              </div>
             </ul>
           </div>
           <div class="playlist">
             <ul>
-              <div><i class="fa-solid fa-square-plus"></i><a href="#">Crea playlist</a></div>
-              <div><i class="fa-solid fa-heart"></i><a href="">Brani che ti piacciono</a></div>
-              <div><i class="fa-solid fa-bookmark"></i><a href="">I tuoi episodi</a></div>
+              <div>
+                <i class="fa-solid fa-square-plus"></i
+                ><a href="#">Crea playlist</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-heart"></i
+                ><a href="">Brani che ti piacciono</a>
+              </div>
+              <div>
+                <i class="fa-solid fa-bookmark"></i
+                ><a href="">I tuoi episodi</a>
+              </div>
             </ul>
           </div>
         </div>
         <div class="playlist-history">
           <div class="playlist-border"></div>
           <div class="container">
-            <ul class="sidebar-list">
-
-            </ul>
+            <ul class="sidebar-list"></ul>
           </div>
         </div>
       </div>
       <main class="home-main w-100">
         <!--Div Single Album-->
-        <div class="announced-album"id="single-album">
-            
-        </div>
+        <div class="announced-album" id="single-album"></div>
         <!--Div Title-->
         <div class="albums-title">
           <p>Buonasera</p>
         </div>
         <!--Div with 6 cards with songs-->
         <div class="container-fluid">
-          <div class="row  row-cols-3 row-cols-lg-2 justify-content-between albums-row" id="liked-songs">
-            
-          </div>
+          <div
+            class="row row-cols-3 row-cols-lg-2 justify-content-between albums-row"
+            id="liked-songs"
+          ></div>
         </div>
         <!--Div Title-->
         <div class="albums-title">
           <p>Altro di ciò che ti piace</p>
         </div>
         <!--Div album cards-->
-        <div class="container-fluid ">
-          <div class="albums-title" id="title1">
-           
-          </div>
-          <div class="row  row-cols-sm-2 row-cols-md-4 row-cols-lg-6 justify-content-between albums-row2 mt-4" id="album-cards1">
-            
-          </div>
-          <div class="albums-title" id="title2">
-            
-          </div>
-          <div class="row  row-cols-sm-2 row-cols-md-4 row-cols-lg-6 justify-content-between albums-row2 mt-4" id="album-cards2">
-            
-          </div>
+        <div class="container-fluid">
+          <div class="albums-title" id="title1"></div>
+          <div
+            class="row row-cols-sm-2 row-cols-md-4 row-cols-lg-6 justify-content-between albums-row2 mt-4"
+            id="album-cards1"
+          ></div>
+          <div class="albums-title" id="title2"></div>
+          <div
+            class="row row-cols-sm-2 row-cols-md-4 row-cols-lg-6 justify-content-between albums-row2 mt-4"
+            id="album-cards2"
+          ></div>
         </div>
       </main>
       <div class="friends">
@@ -148,6 +162,14 @@
         <i class="bi bi-play-circle-fill" id="unico-puls"></i>
         <i class="fa-solid fa-forward-step"></i>
         <i class="fa-solid fa-repeat"></i>
+        <input
+          type="range"
+          class="form-range"
+          min="0"
+          max="10"
+          step="0.5"
+          id="customRange3"
+        />
       </div>
       <div class="container-fluid">
         <i class="fa-solid fa-microphone"></i>
