@@ -1,15 +1,15 @@
 const APIUrl = "https://striveschool-api.herokuapp.com/api/deezer/artist/"
 
 const fetchByQuery = async (idi) => {
-  console.log(idi);
+  console.log(idi)
   const res = await fetch(`${APIUrl}${idi}`)
   // console.log(res)
-  const { tracklist, picture_xl, nb_fan,name } = await res.json()
+  const { tracklist, picture_xl, nb_fan, name } = await res.json()
   const tracce = await fetch(tracklist)
   const { data } = await tracce.json()
   // console.log(tracklist)
   const nomeArtista = name
-  console.log(nomeArtista);
+  console.log(nomeArtista)
 
   // console.log()
 
@@ -62,7 +62,7 @@ const renderFavoriteSongs = async (id) => {
     const div = document.querySelector("#carta")
     // console.log(div)
     div.innerHTML += `
-    <div class="row m-3 text-light align-intems-center cambio">
+    <div class="row p-0 m-0 mb-3 text-light align-items-center cambio">
     <div class="col-1 text-light text-center ">${i + 1}</div>
     <div class="col-2  "><img src="${
       canzonePrincipale.album.cover_xl
@@ -83,8 +83,8 @@ const renderFavoriteSongs = async (id) => {
 window.onload = async () => {
   let url = new URLSearchParams(location.search)
   let id = url.get("id")
-  if(!id){
+  if (!id) {
     window.location.assign("./homepage.html")
-  } 
+  }
   await renderFavoriteSongs(id)
 }
