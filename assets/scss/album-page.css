@@ -1,6 +1,9 @@
+.music {
+  font-family: "Roboto";
+}
 .music .sopra {
   background-color: rgb(32, 107, 112);
-  padding-bottom: 500px;
+  padding-top: 75px;
 }
 .music .sopra .foto-album {
   cursor: pointer;
@@ -40,4 +43,8 @@
 .sotto .elenco .base {
   color: #a2adb3;
   border-bottom: 1px solid #a2adb3;
+}
+.sotto .elenco .canzoni:hover {
+  background-color: #1f1f1f;
+  cursor: pointer;
 }/*# sourceMappingURL=album-page.css.map */

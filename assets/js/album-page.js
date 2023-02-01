@@ -51,7 +51,7 @@ const album = async () => {
   for (let i = 0; i < canzoni.length; i++) {
     const singoli = canzoni[i];
     divSotto.innerHTML += `
-    <div class="row p-0 align-items-center m-0 mb-3">
+    <div class="canzoni row p-0 align-items-center m-0 mb-3">
       <div class="col-1 p-0 text-center">${i + 1}</div>
       <div class="col-4 p-0 text-start">
         <span class="fw-bold text-white">${singoli.title}</span>
