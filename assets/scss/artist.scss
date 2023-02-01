@@ -1,3 +1,4 @@
+@import "colors";
 #immagine {
   position: static;
   height: 48vh;
@@ -65,7 +66,7 @@
   height: 22px;
   border-radius: 50%;
   left: -30px;
-  background-color: #1fdf64;
+  background-color: $spotify-green;
   top: 69px;
   #cuoricino {
     color: white;

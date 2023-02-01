@@ -7,11 +7,10 @@
 .page-container {
   display: flex;
   justify-content: space-between;
+  height: 100%;
 }
 .sidebar {
   background-color: black;
-
-  height: 100vh;
   min-width: 250px;
 }
 .sidenav {
