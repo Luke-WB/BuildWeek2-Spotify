@@ -1,36 +1,21 @@
 let artist = "salmo";
+let artist2 = "dreamtheater";
 const playList = async function (song) {
   let arrSongs = await fetch(
     `https://striveschool-api.herokuapp.com/api/deezer/search?q=${song}`
   );
   let songs = await arrSongs.json();
+
   return songs;
 };
-const selectedSong = async function () {
-  let x = await playList(artist);
-  let linkTrack = x.data[0].album.id;
+const selectedAlbum = async function (song) {
   let linkFetch = await fetch(
-    `https://striveschool-api.herokuapp.com/api/deezer/album/${linkTrack}`
+    `https://striveschool-api.herokuapp.com/api/deezer/search?q=${song}`
   );
   let album = await linkFetch.json();
+  return album;
 };
-selectedSong();
-
 function cycleArr(array) {
-  console.log(array);
-  let singleAlb = document.querySelector("#single-album");
-  singleAlb.innerHTML = 
-    `<div class="p-0" id="announced-img">
-            <img src="${array[18].album.cover_medium}" alt="">
-        </div>
-        <div class="ps-3"id="announced-text">
-            <p>ALBUM</p>
-            <h2>${array[18].album.title}</h2>
-            <p>${array[18].artist.name}</p>
-            <p>ascolta di nuovo</p>
-        </div>
-    </div>
-        `;
   let rowContainer = document.querySelector("#liked-songs");
   for (let i = 0; i < 6; i++) {
     rowContainer.innerHTML += `<div class="your-albums p-0" id="list-${i}" onclick="songId(${array[i].id})">
@@ -42,10 +27,48 @@ function cycleArr(array) {
             </div>
         </div>`;
   }
-  let cardsAlbum = document.querySelector('#album-cards')
-  for (let i = 0; i < 10; i++) {
-    cardsAlbum.innerHTML += 
-    `<div class="card album-cards">
+  let cardsContainer = document.querySelector("#title1");
+  let titleAlbum = document.createElement("p");
+  titleAlbum.innerText = `${array[0].artist.name}`;
+  titleAlbum.classList.add('mt-4')
+  cardsContainer.appendChild(titleAlbum);
+  let cardsAlbum = document.querySelector("#album-cards1");
+  for (let i = 0; i < 5; i++) {
+    cardsAlbum.innerHTML += `<div class="card album-cards" onclick="songId(${array[i].id})">
+            <img src="${array[i].album.cover_medium}" class="card-img-top" alt="...">
+        <div class="card-body d-flex flex-column justify-content-between py-3 px-0">
+            <h5 class="card-title fs-6 ">${array[i].album.title}</h5>
+            <p class="card-text">${array[i].artist.name}</p>
+        </div>
+    </div>`;
+  }
+}
+function secondAlbumCycle(array) {
+  console.log(array);
+  let singleAlb = document.querySelector("#single-album");
+  singleAlb.innerHTML = `<div class="p-0" id="announced-img">
+            <img src="${array[18].album.cover_medium}"  alt="">
+        </div>
+        <div class="ps-3"id="announced-text">
+            <p>ALBUM</p>
+            <h2>${array[18].album.title}</h2>
+            <p>${array[18].artist.name}</p>
+            <p>ascolta di nuovo</p>
+            <button id="single-btn1"  onclick="songId(${array[18].id})">Play</button>
+            <button id="single-btn2">Salva</button>
+        </div>
+    </div>
+        `;
+  let cardsContainer = document.querySelector("#title2");
+  let titleAlbum = document.createElement("p");
+  titleAlbum.innerText = `${array[0].artist.name}`;
+  titleAlbum.classList.add('mt-4')
+  cardsContainer.appendChild(titleAlbum);
+  let cardsAlbum = document.querySelector("#album-cards2");
+
+  for (let i = 0; i < 5; i++) {
+    cardsAlbum.innerHTML += `
+    <div class="card album-cards"  onclick="songId(${array[i].id})">
             <img src="${array[i].album.cover_medium}" class="card-img-top" alt="...">
         <div class="card-body d-flex flex-column justify-content-between py-3 px-0">
             <h5 class="card-title fs-6 ">${array[i].album.title}</h5>
@@ -57,24 +80,9 @@ function cycleArr(array) {
 function songId(id) {
   console.log(id);
 }
-playList(artist).then(function (data) {
+playList(artist).then(async function (data) {
+  await selectedAlbum(artist2).then(function (data) {
+    secondAlbumCycle(data.data);
+  });
   cycleArr(data.data);
 });
-
-// let artist = 'gianniceleste'
-
-//  async function songList(artist){
-//     let url = await fetch(`https://striveschool-api.herokuapp.com/api/deezer/search?q=${artist}`)
-//     return url.json()
-// }
-// function albumNames(data){
-//     data.forEach((el) => {
-//         console.log(el.album.title)
-//     });
-// }
-
-// songList(artist).then(function(data){
-//     albumNames(data.data)
-//     console.log(data);
-
-// })

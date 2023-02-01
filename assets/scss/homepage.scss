@@ -15,7 +15,6 @@
     align-items: center;
     flex-wrap: nowrap;
     width: 100%;
-    height: 200px;
     margin-top: 40px;
     padding: 10px;
     background: linear-gradient(
@@ -26,18 +25,41 @@
     #announced-img {
       display: flex;
       justify-content: center;
-      height: 150px;
+     
   
     }
     #announced-text {
       color: white;
+      height: 100%;
       p {
         font-size: 12px;
-        margin: 0;
+        margin: 10px 0px;
       }
       h2 {
         font-size: 56px;
         font-weight: bolder;
+      }
+      button{
+        width: 80px;
+        margin-right: 10px;
+        border-radius: 35px;
+        padding: 10px;
+      }
+      #single-btn1{
+        background-color: #1ed760;
+        color: black;
+        &:active{
+        background-color: #16c453;
+      }
+      
+        
+      }
+      #single-btn2{
+        background-color: black;
+        color: white;
+        border-width: 1px;
+        border-color: rgba(255, 255, 255, 0.400);
+        
       }
     }
   }
