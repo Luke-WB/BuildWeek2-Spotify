@@ -1,0 +1,51 @@
+.music {
+  font-family: "Roboto";
+  .sopra {
+    background-color: rgb(32, 107, 112);
+    padding-top: 75px;
+    .foto-album {
+      cursor: pointer;
+      img {
+        box-shadow: 0px 0px 40px 1px black;
+      }
+    }
+    .scritta-album {
+      font-size: 14px;
+      span {
+        font-weight: normal;
+        color: #a2adb3;
+      }
+    }
+    .titolo-album {
+      font-size: 70px;
+    }
+  }
+}
+.sotto {
+  color: #a2adb3;
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9023810207676821) 70%, rgb(32, 107, 112) 125%);
+  .icone {
+    cursor: pointer;
+    i {
+      font-size: 30px;
+      margin-right: 30px;
+    }
+    .play {
+      font-size: 50px;
+      color: #1dcf5b;
+      background-color: black;
+      border-radius: 250px;
+    }
+  }
+  .elenco {
+    .base {
+      color: #a2adb3;
+      border-bottom: 1px solid #a2adb3;
+    }
+    .canzoni:hover {
+      background-color: #1f1f1f;
+      cursor: pointer;
+    }
+  }
+}
