@@ -1,0 +1,91 @@
+#immagine {
+  position: static;
+  height: 48vh;
+}
+
+#music .contenuto {
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.bottone-play {
+  height: 51px;
+  width: 52px;
+}
+
+#icona {
+  color: #1fdf64 !important;
+  font-size: 53px;
+}
+
+.seguire {
+  background-color: transparent;
+  border: 1px solid hsla(0deg, 0%, 100%, 0.3);
+  border-radius: 4px;
+  box-sizing: border-box;
+  color: #fff;
+  font-size: 12px;
+  font-weight: 700;
+  letter-spacing: 0.1em;
+  line-height: 16px;
+  padding: 7px 15px;
+  text-align: center;
+  text-transform: uppercase;
+  border-color: #fff;
+}
+
+.seguireDue {
+  align-items: center;
+  background: transparent;
+  border: 0;
+  color: hsla(0deg, 0%, 100%, 0.6);
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+
+#iconaDue {
+  font-size: 30px;
+  color: white;
+}
+
+#cartone {
+  width: 70%;
+}
+#cartone h3 {
+  color: white;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+#imagginina {
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  left: -30px;
+  background-color: #1fdf64;
+  top: 69px;
+}
+#imagginina #cuoricino {
+  color: white;
+  position: relative;
+  left: 3px;
+  top: 1px;
+}
+
+.par {
+  color: white;
+}
+
+main {
+  background: rgb(0, 0, 0);
+  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9301181654) 32%, rgba(65, 56, 34, 0.8544879133) 65%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000000",endColorstr="#413822",GradientType=1);
+}
+
+.cambio:hover {
+  background-color: hsla(0deg, 0%, 100%, 0.1);
+  cursor: pointer;
+}/*# sourceMappingURL=artist.css.map */
