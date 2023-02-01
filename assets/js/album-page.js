@@ -44,8 +44,8 @@ const fetchQuery = async (query) => {
   return data;
 };
 
-const album = async () => {
-  const canzoni = await fetchQuery("6893935");
+const album = async (id) => {
+  const canzoni = await fetchQuery(id);
   console.log(canzoni);
   const divSotto = document.querySelector(".elenco");
   for (let i = 0; i < canzoni.length; i++) {
@@ -67,5 +67,11 @@ const album = async () => {
 };
 
 window.onload = async () => {
-  await album();
+  let url = new URLSearchParams(location.search)
+  let id = url.get("id")
+  console.log(id);
+  if(!id){
+    window.location.assign("./homepage.html")
+  } 
+  await album(id);
 };
