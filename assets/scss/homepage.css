@@ -1,4 +1,5 @@
 .home-main {
+  color: white;
   background: rgb(34, 34, 34);
   background: linear-gradient(180deg, rgb(34, 34, 34) 50%, rgb(18, 18, 18) 100%);
   display: flex;
@@ -79,4 +80,9 @@
 .albums-row .your-albums .albums-text p {
   margin: 0;
   padding-left: 5px;
+}
+
+.album-cards {
+  background-color: #2d2d2d !important;
+  padding: 10px 10px 0 10px;
 }/*# sourceMappingURL=homepage.css.map */
