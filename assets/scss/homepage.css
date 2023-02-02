@@ -41,6 +41,7 @@
 .home-main .announced-album #announced-text #single-btn1 {
   background-color: #1ed760;
   color: black;
+  border: none;
 }
 .home-main .announced-album #announced-text #single-btn1:active {
   background-color: #16c453;
