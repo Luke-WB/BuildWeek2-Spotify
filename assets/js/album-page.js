@@ -1,4 +1,5 @@
 const Url = "https://striveschool-api.herokuapp.com/api/deezer/album/";
+const UrlSong = "https://striveschool-api.herokuapp.com/api/deezer/search?q=";
 
 const fetchQuery = async (query) => {
   const album = await fetch(`${Url}${query}`);
@@ -51,9 +52,10 @@ const album = async () => {
   for (let i = 0; i < canzoni.length; i++) {
     const singoli = canzoni[i];
     divSotto.innerHTML += `
-    <div class="canzoni row p-0 align-items-center m-0 mb-3">
+    <div class="canzoni row p-0 align-items-center m-0 mb-3 pe-4" 
+      onclick="canzoniSingole('${singoli.title}','${singoli.artist.name}')">
       <div class="col-1 p-0 text-center">${i + 1}</div>
-      <div class="col-4 p-0 text-start">
+      <div class="col-5 p-0 text-start">
         <span class="fw-bold text-white">${singoli.title}</span>
         <br>
         ${singoli.artist.name}
@@ -64,6 +66,24 @@ const album = async () => {
     </div>
     `;
   }
+};
+
+const canzoniSingole = async (title, name) => {
+  const song = await fetch(`${UrlSong}${title}${name}`);
+  const { data } = await song.json();
+  console.log(data);
+  const primaCanzone = data[0];
+  const canzoneSingola = document.querySelector(".singoli");
+  canzoneSingola.innerHTML = `
+  <div class="col-6">
+    <img src="${primaCanzone.album.cover_xl}" alt="Foto album" style="width: 60px; height: 60px"/>
+  </div>
+  <div class="col-6 d-flex align-items-center">
+    <span class="fw-bold">${primaCanzone.title} </span>
+    <br>
+    ${primaCanzone.artist.name}
+  </div>
+  `;
 };
 
 window.onload = async () => {

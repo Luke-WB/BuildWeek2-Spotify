@@ -54,9 +54,9 @@
               <i class="fa-solid fa-ellipsis"></i>
             </div>
             <div class="elenco">
-              <div class="base row m-0 my-4 py-2 fw-bold">
+              <div class="base row m-0 my-4 py-2 fw-bold pe-4">
                 <div class="col-1 p-0 text-center">#</div>
-                <div class="col-4 p-0 text-start">TITOLO</div>
+                <div class="col-5 p-0 text-start">TITOLO</div>
                 <div class="col-3 p-0 text-end">RIPRODUZIONI</div>
                 <div class="col-3 p-0 text-end"><i class="bi bi-clock"></i></div>
               </div>
@@ -66,61 +66,77 @@
       </main>
 
       <div class="friends">
-        <div class="activity-div">
-          <div>
-            <h3>Attività amici</h3>
-          </div>
-          <div>
+        <button
+          class="btn"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasScrolling"
+          aria-controls="offcanvasScrolling"
+          style="background-color: black"
+        >
+          <i class="fa-solid fa-user-plus"></i>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          data-bs-scroll="true"
+          data-bs-backdrop="false"
+          tabindex="-1"
+          id="offcanvasScrolling"
+          aria-labelledby="offcanvasScrollingLabel"
+          style="width: 270px; background-color: black"
+        >
+          <div class="offcanvas-header" data-bs-theme="dark">
+            <h3 class="offcanvas-title" id="offcanvasRightLabel">Attività amici</h3>
             <i class="fa-solid fa-user-plus"></i>
-            <i class="fa-solid fa-xmark"></i>
+            <button type="button" class="btn-close text-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
           </div>
-        </div>
-        <div class="profile">
-          <div>
-            <i class="fa-solid fa-user text-primary"></i>
-          </div>
-          <div>
-            <h4>Charlie Hookham</h4>
-            <p>In camera <i class="fas fa-circle"></i> Yumi zouma</p>
-            <p><i class="far fa-dot-circle"></i> EP</p>
-          </div>
-          <div>
-            <p>4 ore</p>
-          </div>
-        </div>
-        <div class="profile">
-          <div>
-            <i class="fa-solid fa-user text-primary"></i>
-          </div>
-          <div>
-            <h4>Lightdark02</h4>
-            <p>Aimed to Kill <i class="fas fa-circle"></i> Jade LeMac</p>
-            <p><i class="far fa-dot-circle"></i> Aimed to Kill</p>
-          </div>
-          <div>
-            <p>8 ore</p>
-          </div>
-        </div>
-        <div class="profile">
-          <div>
-            <i class="fa-solid fa-user text-primary"></i>
-          </div>
-          <div>
-            <h4>Valeria Traverso</h4>
-            <p>New Kings <i class="fas fa-circle"></i> Sleeping Wolf</p>
-            <p><i class="fas fa-music"></i> Twint Badass move</p>
-          </div>
-          <div>
-            <p>3 giorni</p>
+          <div class="offcanvas-body">
+            <div class="profile">
+              <div>
+                <i class="fa-solid fa-user text-primary"></i>
+              </div>
+              <div>
+                <h4>Charlie Hookham</h4>
+                <p>In camera <i class="fas fa-circle"></i> Yumi zouma</p>
+                <p><i class="far fa-dot-circle"></i> EP</p>
+              </div>
+              <div>
+                <p>4 ore</p>
+              </div>
+            </div>
+            <div class="profile">
+              <div>
+                <i class="fa-solid fa-user text-primary"></i>
+              </div>
+              <div>
+                <h4>Lightdark02</h4>
+                <p>Aimed to Kill <i class="fas fa-circle"></i> Jade LeMac</p>
+                <p><i class="far fa-dot-circle"></i> Aimed to Kill</p>
+              </div>
+              <div>
+                <p>8 ore</p>
+              </div>
+            </div>
+            <div class="profile">
+              <div>
+                <i class="fa-solid fa-user text-primary"></i>
+              </div>
+              <div>
+                <h4>Valeria Traverso</h4>
+                <p>New Kings <i class="fas fa-circle"></i> Sleeping Wolf</p>
+                <p><i class="fas fa-music"></i> Twint Badass move</p>
+              </div>
+              <div>
+                <p>3 giorni</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </div>
 
     <nav class="navbar fixed-bottom playlist-bar barra-sotto">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Fixed bottom</a>
-      </div>
+      <div class="singoli container-fluid row align-items-center text-white"></div>
       <div class="container-fluid">
         <i class="fa-solid fa-shuffle"></i>
         <i class="fa-solid fa-backward-step"></i>
