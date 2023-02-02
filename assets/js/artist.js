@@ -23,7 +23,7 @@ const fetchByQuery = async (idi) => {
   margin-bottom: 1rem;
   position: relative;
   top: -26vh;
-  left: 6px; color:white; font-weight: bold;"> Artista verificato
+  padding-left: 6px; color:white; font-weight: bold;"> Artista verificato
   <i class="fa-solid fa-certificate" style="color: #3d91f4; font-size: larger;"
   ><span style="position: relative;
   left: -19px;
