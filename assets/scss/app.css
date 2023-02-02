@@ -288,4 +288,51 @@ input[type=range]::-webkit-slider-runnable-track:hover {
 
 .ore {
   margin-right: 3px;
+}
+
+#navSopra {
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  z-index: 3;
+  opacity: 75%;
+  background-color: black;
+}
+
+.contenitoreBottoni {
+  margin-left: 30px;
+}
+
+#bottonesDue {
+  margin-left: 7px;
+  background-color: lightgray;
+  opacity: 40%;
+}
+#bottonesDue a {
+  left: 8px;
+}
+#bottonesDue a i {
+  color: white;
+  opacity: 100%;
+}
+
+#bottonesUno {
+  margin-left: 7px;
+  background-color: lightgray;
+  opacity: 40%;
+}
+#bottonesUno a {
+  left: 8px;
+}
+#bottonesUno a i {
+  color: white;
+  opacity: 100%;
+}
+
+.nav-colored {
+  background-color: #000;
+}
+
+.nav-transparent {
+  background-color: transparent;
 }/*# sourceMappingURL=app.css.map */
