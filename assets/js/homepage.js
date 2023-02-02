@@ -81,10 +81,10 @@ function secondAlbumCycle(array) {
 function songId(id) {
   id.onclick = location.assign(`./album-page.html?id=${id}`)
 }
+selectedAlbum(artist2).then(function (data) {
+ secondAlbumCycle(data.data)
+})
 playList(artist).then(async function (data) {
-  await selectedAlbum(artist2).then(function (data) {
-    secondAlbumCycle(data.data)
-  })
   cycleArr(data.data)
 })
 
