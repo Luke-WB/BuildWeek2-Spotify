@@ -23,6 +23,13 @@
   padding-left: 15px;
   padding-top: 30px;
 }
+.sidenav .nav {
+  position: fixed;
+}
+.sidenav .playlist {
+  position: fixed;
+  top: 150px;
+}
 .sidenav ul {
   padding: 0;
   display: flex;
@@ -59,9 +66,9 @@
 }
 
 .friends {
-  background-color: black;
-  padding: 30px 5px 0px 15px;
-  min-width: 220px;
+  position: fixed;
+  top: 60px;
+  right: 25px;
 }
 .friends .activity-div {
   display: flex;
