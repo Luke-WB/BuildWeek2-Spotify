@@ -290,15 +290,6 @@ input[type=range]::-webkit-slider-runnable-track:hover {
   margin-right: 3px;
 }
 
-#navSopra {
-  position: -webkit-sticky;
-  position: sticky;
-  top: 0;
-  z-index: 3;
-  opacity: 75%;
-  background-color: black;
-}
-
 .contenitoreBottoni {
   margin-left: 30px;
 }
@@ -330,9 +321,13 @@ input[type=range]::-webkit-slider-runnable-track:hover {
 }
 
 .nav-colored {
-  background-color: #000;
+  background-color: black;
 }
 
 .nav-transparent {
   background-color: transparent;
+}
+
+.dentroMain {
+  padding: 0px 25px;
 }/*# sourceMappingURL=app.css.map */

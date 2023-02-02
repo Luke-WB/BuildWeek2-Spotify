@@ -2,6 +2,7 @@
 
 .music {
   font-family: "Roboto";
+  background-color: rgb(32, 107, 112);
   .sopra {
     background-color: rgb(32, 107, 112);
     padding-top: 75px;
@@ -26,7 +27,11 @@
 .sotto {
   color: #a2adb3;
   background: rgb(0, 0, 0);
-  background: linear-gradient(0deg, rgba(0, 0, 0, 0.9023810207676821) 70%, rgb(32, 107, 112) 125%);
+  background: linear-gradient(
+    0deg,
+    rgba(0, 0, 0, 0.9023810207676821) 70%,
+    rgb(32, 107, 112) 125%
+  );
   .icone {
     cursor: pointer;
     i {

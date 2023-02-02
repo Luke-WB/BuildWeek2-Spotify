@@ -310,13 +310,6 @@ input[type="range"]::-webkit-slider-runnable-track:hover {
 }
 //--------------------------------------------------------BARRA SOPRA---------------------------------------------------
 
-#navSopra {
-  position: sticky;
-  top: 0;
-  z-index: 3;
-  opacity: 75%;
-  background-color: black;
-}
 .contenitoreBottoni {
   margin-left: 30px;
 }
@@ -348,9 +341,13 @@ input[type="range"]::-webkit-slider-runnable-track:hover {
 }
 
 .nav-colored {
-  background-color: #000;
+  background-color: black;
 }
 
 .nav-transparent {
   background-color: transparent;
+}
+
+.dentroMain {
+  padding: 0px 25px;
 }

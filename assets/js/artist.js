@@ -88,3 +88,24 @@ window.onload = async () => {
   }
   await renderFavoriteSongs(id)
 }
+
+window.onscroll = function () {
+  const myNav = document.querySelector(".navSopra")
+
+  if (window.scrollY > 80) {
+    myNav.classList.add("nav-colored")
+    // myNav.classList.remove("nav-transparent")
+  } else {
+    // myNav.classList.add("nav-transparent")
+    myNav.classList.remove("nav-colored")
+  }
+}
+
+const bottiniCambiati = () => {
+  const prev = document.querySelector("#bottonesUno")
+  window.history.back(prev)
+}
+const bottiniCambiatiDue = () => {
+  const next = document.querySelector("#bottonesDue")
+  window.history.forward(next)
+}
