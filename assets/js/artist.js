@@ -70,10 +70,11 @@ const renderFavoriteSongs = async (id) => {
     <div class="col-5  text-light text-start ">${canzonePrincipale.title_short}</div>
     <div class="col-2  text-light">${canzonePrincipale.rank}</div>
     ${Math.floor(canzonePrincipale.duration / 60)}:${
-      canzonePrincipale.duration - [Math.floor(canzonePrincipale.duration / 60) * 60]
+      (canzonePrincipale.duration - [Math.floor(canzonePrincipale.duration / 60) * 60]).toString().padStart(2,"0")
     }</div>
     </div>
     `;
+    console.log(canzonePrincipale);
   }
 };
 

@@ -62,7 +62,7 @@ const album = async (id) => {
       </div>
       <div class="col-3 p-0 text-end" >${singoli.rank}</div>
       <div class="col-3 p-0 text-end">
-      ${Math.floor(singoli.duration / 60)}:${singoli.duration - Math.floor(singoli.duration / 60) * 60}
+      ${Math.floor(singoli.duration / 60)}:${(singoli.duration - [Math.floor(singoli.duration / 60) * 60]).toString().padStart(2,"0")}
     </div>
     `;
   }
