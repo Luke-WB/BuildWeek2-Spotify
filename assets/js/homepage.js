@@ -13,17 +13,7 @@ const selectedAlbum = async function (song) {
 };
 function cycleArr(array) {
   console.log(array);
-  let rowContainer = document.querySelector("#liked-songs");
-  for (let i = 0; i < 6; i++) {
-    rowContainer.innerHTML += `<div class="your-albums p-0" id="list-${i}" onclick="songId(${array[i].album.id})">
-            <div class="albums-img">
-                <img src="${array[i].album.cover_medium}" alt="">
-            </div>
-            <div class="albums-text">
-                <p>${array[i].title}</p>
-            </div>
-        </div>`;
-  }
+  
   let cardsContainer = document.querySelector("#title1");
   let titleAlbum = document.createElement("p");
   titleAlbum.innerText = `${array[0].artist.name}`;
@@ -42,6 +32,17 @@ function cycleArr(array) {
 }
 function secondAlbumCycle(array) {
   console.log(array);
+  let rowContainer = document.querySelector("#liked-songs");
+  for (let i = 0; i < 6; i++) {
+    rowContainer.innerHTML += `<div class="your-albums p-0" id="list-${i}" onclick="songId(${array[i].album.id})">
+            <div class="albums-img">
+                <img src="${array[i].album.cover_medium}" alt="">
+            </div>
+            <div class="albums-text">
+                <p>${array[i].title}</p>
+            </div>
+        </div>`;
+  }
   let singleAlb = document.querySelector("#single-album");
   singleAlb.innerHTML = `<div class="p-0" id="announced-img">
             <img src="${array[18].album.cover_medium}"  alt="">
