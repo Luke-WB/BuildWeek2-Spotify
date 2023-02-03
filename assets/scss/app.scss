@@ -58,6 +58,9 @@
     overflow-x: hidden;
   }
 }
+main {
+  margin-bottom: 100px;
+}
 .friends {
   position: fixed;
   top: 60px;
@@ -92,7 +95,7 @@
 }
 .barra-sotto div {
   width: 33%;
-  .pulsanti{
+  .pulsanti {
     width: 100%;
     justify-content: center;
   }
@@ -108,12 +111,12 @@
     font-size: 15px;
   }
 }
-.text-start{
+.text-start {
   @media screen and(max-width: 890px) {
     font-size: 12px !important;
   }
 }
-.volume-canzone{
+.volume-canzone {
   display: flex;
   justify-content: end;
   align-items: center;
@@ -121,7 +124,6 @@
   @media screen and (max-width: 740px) {
     padding: 0;
   }
-
 }
 .profile {
   display: flex;
