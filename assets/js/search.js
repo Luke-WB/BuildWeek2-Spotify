@@ -7,9 +7,10 @@ const ricerca = async (query) => {
 };
 
 const music = async (name) => {
+  console.log(name);
   const searchMusic = await ricerca(name);
   /* console.log(searchMusic); */
-  if (searchMusic[0].artist.name == name) {
+  if (name) {
     const divArtista = document.querySelector(".artista");
     divArtista.innerHTML += `
       <div class="text-center">
@@ -19,18 +20,45 @@ const music = async (name) => {
       `;
 
     searchMusic.forEach((singolaSearch) => {
-      const divArtista = document.querySelector(".canzoni");
-      divArtista.innerHTML += `
-        <div class="card album-cards col-2 justify-content-center">
-          <img src="${singolaSearch.album.cover_xl}" class="foto" alt="Foto album">
-          <div class="card-body d-flex flex-column justify-content-between py-3 px-0">
-            <h5 class="card-title fs-6 ">${singolaSearch.album.title}</h5>
+      const divAlbum = document.querySelector(".album");
+      divAlbum.innerHTML += `
+        <div class="card album-cards d-flex flex-row justify-content-between" style="width: 20rem; height: 6rem;" onclick="songId(${singolaSearch.album.id})">
+            <img src="${singolaSearch.album.cover_xl}" class="card-img-top foto-canzone" alt="Foto album>
+          <div class="card-body d-flex flex-column">
+            <h5 class="card-title fs-6 fw-bold ">${singolaSearch.album.title}</h5>          
             <a href="./artist.html?id=${singolaSearch.artist.id}"class="card-text">${singolaSearch.artist.name}</a>
           </div>
-        </div>`;
+        </div>
+        `;
+
+      const divCanzoni = document.querySelector(".canzoni");
+      divCanzoni.innerHTML += `
+        <div class="card album-cards justify-content-between text-center" style="width: 16rem; height: 20rem;">
+            <img src="${singolaSearch.album.cover_xl}" class="card-img-top" alt="Foto album>
+          <div class="card-body">
+            <h5 class="card-title fs-6 fw-bold ">${singolaSearch.album.title}</h5>          
+            <a href="./artist.html?id=${singolaSearch.artist.id}"class="card-text">${singolaSearch.artist.name}</a>
+          </div>
+        </div>
+        `;
     });
   }
 };
+
+function songId(id) {
+  id.onclick = location.assign(`./album-page.html?id=${id}`);
+}
+
+const valoreInput = async () => {
+  const input = document.getElementById("cerca");
+  const content = input.value;
+  window.localStorage.clear();
+  /* localStorage.setItem("Text input", content); */
+
+  await music(content);
+};
+
 window.onload = async () => {
-  await music("Avicii");
+  const searchHistory = localStorage.getItem("Text input");
+  await music(searchHistory);
 };
