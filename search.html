@@ -9,8 +9,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="./assets/scss/app.css" />
     <link rel="stylesheet" href="./assets/scss/homepage.css" />
-    <script src="https://kit.fontawesome.com/185747f510.js" crossorigin="anonymous" defer></script>
-    <script src="./assets/js/homepage.js"></script>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -134,37 +132,30 @@
           </div>
         </nav>
         <!-- FINE BARRA SOPRA -->
+
+        <form class="d-flex" role="search">
+          <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+          <button class="btn btn-outline-success" type="submit">CERCA</button>
+        </form>
+
         <div class="dentroMain">
-          <!--Div Single Album-->
-          <div class="announced-album" id="single-album"></div>
-          <!--Div Title-->
-          <div class="albums-title">
-            <p>Buonasera</p>
-          </div>
-          <!--Div with 6 cards with songs-->
+          <div class="albums-title"><p>ARTISTA</p></div>
+          <div class="albums-title"><p>ALBUM</p></div>
           <div class="container-fluid">
             <div class="row row-cols-3 row-cols-lg-2 justify-content-between albums-row" id="liked-songs"></div>
           </div>
-          <!--Div Title-->
-          <div class="albums-title">
-            <p>Altro di ciò che ti piace</p>
-          </div>
-          <!--Div album cards-->
+          <div class="albums-title"><p>CANZONI</p></div>
           <div class="container-fluid">
             <div class="albums-title" id="title1"></div>
             <div
               class="row row-cols-sm-2 row-cols-md-4 row-cols-lg-6 justify-content-between albums-row2 mt-4"
               id="album-cards1"
             ></div>
-            <div class="albums-title" id="title2"></div>
-            <div
-              class="row row-cols-sm-2 row-cols-md-4 row-cols-lg-6 justify-content-between albums-row2 mt-4"
-              id="album-cards2"
-            ></div>
           </div>
         </div>
       </main>
     </div>
+
     <nav class="navbar fixed-bottom playlist-bar barra-sotto">
       <div class="container-fluid"></div>
       <div class="container-fluid w-50 justify-content-evenly">
@@ -200,5 +191,7 @@
       integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN"
       crossorigin="anonymous"
     ></script>
+    <script src="https://kit.fontawesome.com/185747f510.js" crossorigin="anonymous" defer></script>
+    <script src="./assets/js/search.js"></script>
   </body>
 </html>
