@@ -10,12 +10,9 @@
   height: 100%;
 }
 
-.side-container {
+.sidebar {
   background-color: black;
   min-width: 250px;
-}
-.side-container .sidebar {
-  position: fixed;
 }
 
 .sidenav {
@@ -25,6 +22,13 @@
   justify-content: space-between;
   padding-left: 15px;
   padding-top: 30px;
+}
+.sidenav .nav {
+  position: fixed;
+}
+.sidenav .playlist {
+  position: fixed;
+  top: 150px;
 }
 .sidenav ul {
   padding: 0;
@@ -50,7 +54,6 @@
 
 .playlist-history {
   color: #a2adb3;
-  min-width: 250px;
 }
 .playlist-history .playlist-border {
   width: 90%;
