@@ -60,6 +60,15 @@
 .playlist-history .container {
   overflow-y: scroll;
   overflow-x: hidden;
+  height: 53vh;
+}
+
+::-webkit-scrollbar {
+  background-color: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #5e5e5e;
 }
 
 .friends {
@@ -81,6 +90,15 @@
 }
 .friends i {
   color: #a2adb3;
+}
+.friends .muprofile {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+}
+.friends .fa-circle {
+  font-size: 5px;
 }
 
 .barra-sotto {
