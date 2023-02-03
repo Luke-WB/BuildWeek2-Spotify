@@ -62,7 +62,9 @@ const album = async (id) => {
       </div>
       <div class="col-3 p-0 text-end" >${singoli.rank}</div>
       <div class="col-3 p-0 text-end">
-      ${Math.floor(singoli.duration / 60)}:${(singoli.duration - [Math.floor(singoli.duration / 60) * 60]).toString().padStart(2,"0")}
+      ${Math.floor(singoli.duration / 60)}:${(singoli.duration - [Math.floor(singoli.duration / 60) * 60])
+      .toString()
+      .padStart(2, "0")}
     </div>
     `;
   }
@@ -76,10 +78,10 @@ const canzoniSingole = async (title, name) => {
   const primaCanzone = data[0];
   const canzoneSingola = document.querySelector(".singoli");
   canzoneSingola.innerHTML = `
-  <div class="col-6">
+  <div class="text-end">
     <img src="${primaCanzone.album.cover_xl}" alt="Foto album" style="width: 60px; height: 60px"/>
   </div>
-  <div class="col-6 d-flex align-items-center">
+  <div class="text-start ms-4" >
     <span class="fw-bold">${primaCanzone.title} </span>
     <br>
     ${primaCanzone.artist.name}
