@@ -97,13 +97,23 @@
 }
 
 .barra-sotto div {
-  min-width: 180px;
-  width: 20%;
+  width: 33%;
+}
+.barra-sotto div .pulsanti {
+  width: 100%;
+  justify-content: center;
 }
 
 .barra-sotto div i {
   color: #a2adb3;
   font-size: 20px;
+  padding: 10px;
+}
+
+.volume-canzone {
+  display: flex;
+  justify-content: end;
+  align-items: center;
 }
 
 .profile {

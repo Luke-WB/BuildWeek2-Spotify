@@ -78,10 +78,10 @@ const canzoniSingole = async (title, name) => {
   const primaCanzone = data[0];
   const canzoneSingola = document.querySelector(".singoli");
   canzoneSingola.innerHTML = `
-  <div class="text-end">
+  <div class="text-end" style="width: 60px">
     <img src="${primaCanzone.album.cover_xl}" alt="Foto album" style="width: 60px; height: 60px"/>
   </div>
-  <div class="text-start ms-4" >
+  <div class="text-start ms-4" style="width: 100%" >
     <span class="fw-bold">${primaCanzone.title} </span>
     <br>
     ${primaCanzone.artist.name}
