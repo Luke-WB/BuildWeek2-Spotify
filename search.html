@@ -137,8 +137,8 @@
         <!-- FINE BARRA SOPRA -->
 
         <form class="d-flex" role="search">
-          <input class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
-          <button class="btn btn-outline-success" type="submit">CERCA</button>
+          <input id="cerca" class="form-control me-2" type="search" placeholder="Cerca..." aria-label="Search" />
+          <button class="btn btn-outline-success" type="button" onclick="valoreInput()">CERCA</button>
         </form>
 
         <div class="container-fluid">
@@ -148,28 +148,28 @@
           </div>
           <div class="albums-title">
             <p>ALBUM</p>
-            <div class="album"></div>
+            <div class="album d-flex flex-wrap gap-3"></div>
           </div>
           <div class="albums-title">
             <p>CANZONI</p>
-            <div class="canzoni d-flex flex-wrap"></div>
+            <div class="canzoni d-flex flex-wrap gap-3"></div>
           </div>
         </div>
       </main>
     </div>
 
     <nav class="navbar fixed-bottom playlist-bar barra-sotto">
-      <div class="container-fluid"></div>
-      <div class="container-fluid w-50 justify-content-evenly">
-        <div class="comprende d-flex align-items-center text-center">
-          <i class="fa-solid ms-3 fa-shuffle"></i>
-          <i class="fa-solid ms-3 fa-backward-step"></i>
-          <i class="bi bi-play-circle-fill text-white fs-2 ms-3" id="unico-puls"></i>
-          <i class="fa-solid ms-3 fa-forward-step"></i>
-          <i class="fa-solid ms-3 fa-repeat"></i>
+      <div class="singoli d-flex align-items-center ps-4 text-white"></div>
+      <div class="d-flex flex-column justify-content-between">
+        <div class="d-flex align-items-center text-center pulsanti">
+          <i class="fa-solid fa-shuffle"></i>
+          <i class="fa-solid fa-backward-step"></i>
+          <i class="bi bi-play-circle-fill text-white fs-2" id="unico-puls"></i>
+          <i class="fa-solid fa-forward-step"></i>
+          <i class="fa-solid fa-repeat"></i>
         </div>
         <input
-          style="width: 80%"
+          style="width: 100%"
           type="range"
           class="form-range p-0 m-0"
           min="0"
@@ -178,13 +178,12 @@
           id="customRange3"
         />
       </div>
-      <div class="container-fluid w-25">
-        <i class="fa-solid ms-2 fa-microphone"></i>
-        <i class="fa-solid ms-2 fa-bars"></i>
-        <i class="fa-solid ms-2 fa-computer"></i>
-        <i class="fa-solid ms-2 fa-volume-high"></i>
-        <input style="width: 29%" type="range" class="form-range" min="0" max="10" step="0.5" id="customRange4" />
-
+      <div class="volume-canzone">
+        <i class="fa-solid fa-microphone"></i>
+        <i class="fa-solid fa-bars"></i>
+        <i class="fa-solid fa-computer"></i>
+        <i class="fa-solid fa-volume-high"></i>
+        <input style="width: 60px" type="range" class="form-range" min="0" max="10" step="0.5" id="customRange4" />
         <i class="fa-solid fa-up-right-and-down-left-from-center"></i>
       </div>
     </nav>

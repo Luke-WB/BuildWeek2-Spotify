@@ -71,6 +71,10 @@
   background-color: #5e5e5e;
 }
 
+main {
+  margin-bottom: 100px;
+}
+
 .friends {
   position: fixed;
   top: 60px;

@@ -65,6 +65,9 @@
 ::-webkit-scrollbar-thumb {
   background-color: $scrollbar-thumb-grey;
 }
+main {
+  margin-bottom: 100px;
+}
 .friends {
   position: fixed;
   top: 60px;
