@@ -101,11 +101,27 @@
   color: #a2adb3;
   font-size: 20px;
   padding: 10px;
+  @media screen and(max-width: 890px) {
+    padding: 5px;
+  }
+  @media screen and (max-width: 740px) {
+    font-size: 15px;
+  }
+}
+.text-start{
+  @media screen and(max-width: 890px) {
+    font-size: 12px !important;
+  }
 }
 .volume-canzone{
   display: flex;
   justify-content: end;
   align-items: center;
+  padding-right: 20px;
+  @media screen and (max-width: 740px) {
+    padding: 0;
+  }
+
 }
 .profile {
   display: flex;
