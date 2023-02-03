@@ -90,8 +90,9 @@
   align-items: center;
   display: flex;
   flex-direction: row;
-  height: 85px;
   justify-content: space-between;
+  align-content: center;
+  height: 100px;
   padding: 0;
 }
 
