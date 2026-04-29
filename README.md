@@ -44,6 +44,8 @@ git clone https://github.com/luke-wb/BuildWeek2-Spotify.git
 
 ### 🚀 2. Avvia il progetto
 ```bash 
-Apri il progetto con Visual Studio Code e avvia il file homepage.html direttamente nel browser (oppure usa l’estensione Live Server per Visual Studio Code).
+Apri il progetto con Visual Studio Code e avvia il file homepage.html direttamente nel browser
+</br>
+(oppure usa l’estensione Live Server per Visual Studio Code).
 ```
 
